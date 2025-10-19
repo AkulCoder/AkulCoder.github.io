@@ -1,0 +1,146 @@
+/* --- Global --- */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #f7f9fb;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --- Navbar --- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: #0a192f;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #00bcd4;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #00bcd4;
+}
+
+/* --- Hero Section --- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 60px;
+  text-align: left;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  color: #0a192f;
+}
+
+.hero h1 span {
+  color: #00bcd4;
+}
+
+.hero p {
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.hero-img img {
+  width: 320px;
+  border-radius: 15px;
+}
+
+/* --- Button --- */
+.btn {
+  background-color: #00bcd4;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #028090;
+}
+
+/* --- Content Section --- */
+.content {
+  padding: 60px;
+  text-align: center;
+}
+
+.project-grid, .skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+/* --- Cards --- */
+.card, .skill-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover, .skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #0a192f;
+  color: white;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #00bcd4;
+}
+
+/* --- Add this CSS for the fade-in:--- */
+.card, .skill-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+.card.show, .skill-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}

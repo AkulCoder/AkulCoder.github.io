@@ -133,14 +133,3 @@ footer {
 footer a {
   color: #00bcd4;
 }
-
-/* --- Add this CSS for the fade-in:--- */
-.card, .skill-card {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s, transform 0.6s;
-}
-.card.show, .skill-card.show {
-  opacity: 1;
-  transform: translateY(0);
-}

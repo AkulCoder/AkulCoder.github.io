@@ -100,7 +100,7 @@ nav a.active {
   text-align: center;
 }
 
-.project-grid, .skills-container {
+.projects-grid, .skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
